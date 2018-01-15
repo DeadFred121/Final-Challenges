@@ -9,12 +9,13 @@ through them. Look up the "rest parameter" syntax.
 */
 
 const omit = (obj, ...rest) => {
-  const result = Object.assign({}, obj);
+  const result = Object.assign({}, obj)
   rest.forEach(key => {
     delete result[key]
   });
-  return result;
-}
+  return result
+};
+ 
 
 
 // Check your solution by running these tests: mocha *this_filename*
